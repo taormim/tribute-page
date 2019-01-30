@@ -25,7 +25,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/*-- Styles Links --*/
+/*-- Styles Links in Pages--*/
 a:link, a:visited {
   color: #D0D0D0;
   text-decoration: none;
@@ -42,6 +42,7 @@ footer {
   text-align: center;
   padding: 1em 0 .3em 0;
   color: #D0D0D0;
+  background-color: #444;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
