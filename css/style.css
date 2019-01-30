@@ -1,4 +1,19 @@
-/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
 body {
   color: #333;
   font-size: 16px;
@@ -10,116 +25,23 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-nav, footer {
-  background-color: #444;
+/*-- Styles Links --*/
+a:link, a:visited {
+  color: #D0D0D0;
+  text-decoration: none;
 }
+a:hover, a:active  {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+a.active {
+  color: #F0F0F0;
+}
+/*--Styles Footer--*/
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
   color: #D0D0D0;
-}
-/*-- Main Menu Styles--*/
-.list{
-  font-size: 125%;
-  font-weight: 600;
-}
-nav ul {
-  width: 60%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-nav a:link, nav a:visited {
-  color: #D0D0D0;
-  text-decoration: none;
-}
-nav a:hover, nav a:active  {
-  color: #F0F0F0;
-  text-decoration: underline;
-}
-nav a.active {
-  color: #F0F0F0;
-}
-/*-- Hero Unit Styles--*/
-header {
-  width: 510px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-header img {
-  width: 100%;
-  margin: 0 auto;
-}
-header h1 {
-  margin: 0 auto;
-  padding: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-}
-.small {
-  margin-top: 1em;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 100%;
-}
-/*-- Article Styles--*/
-article {
-  width: 768px;
-  font-size: 18px;
-  line-height: 1.3;
-  margin-left: auto;
-  margin-right: auto;
-}
-article figure {
-  width: 39%;
-  margin: 0 0 1.25em 1.25em;
-  float: right;
-}
-article figcaption {
-  color: #444;
-  font-size: 15px;
-  font-family: 'Arial', sans-serif;
-}
-.dropcap {
-  float: left;
-  font-size: 400%;
-  font-family: 'Gentium Book Basic', serif;
-  margin-top: -12px;
-  margin-right: 4px;
-  line-height: 1;
-}
-.pagination {
-  margin: 2em auto;
-  width: 96%;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 8em;
-  padding-right: 8em;
-}
-a.button {
-  border: 2px solid #888;
-  padding: .4em 1em .4em 1em;
-  text-decoration: none;
-  color: #888;
-  border-radius: 200px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 80%;
-  background-color: #FFFFFF;
-}
-a.button:hover, a.button:active {
-  border: 2px solid #444;
-  text-decoration: none;
-  color: #444;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
