@@ -25,6 +25,68 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+/*--Styles the grid--*/
+.grid-container {
+  border: 3px;
+  padding: 1em;
+/*-- enables grid layout--*/
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-item {
+  border: 2px solid gray;
+  padding: .5em;
+  background-color: papayawhip;
+}
+
+.grid-container {
+  grid-template-areas:
+                      "head head head"
+                      "feat1 feat2 feat3"
+                      "wall blog1 blog1"
+                      "wall blog2 blog2"
+                      "wall blog3 blog3"
+                      "wall blog4 blog4"
+                      "close1 close1 close2"
+                      "foot foot foot";
+}
+.one {
+  grid-area: head;
+}
+.two {
+  grid-area: feat1;
+}
+.three {
+  grid-area: feat2;
+}
+.four {
+  grid-area: feat3;
+}
+.five {
+  grid-area: wall;
+}
+.six {
+  grid-area: blog1;
+}
+.seven {
+  grid-area: blog2;
+}
+.eight {
+  grid-area: blog3;
+}
+.nine {
+  grid-area: blog4;
+}
+.ten {
+  grid-area: close1;
+}
+.eleven {
+  grid-area: close2;
+}
+.twelve {
+  grid-area: foot;
+}
 /*-- Styles Links in Pages--*/
 a:link, a:visited {
   color: #D0D0D0;
@@ -38,11 +100,15 @@ a.active {
   color: #F0F0F0;
 }
 /*--Styles Footer--*/
-footer {
-  text-align: center;
-  padding: 1em 0 .3em 0;
-  color: #D0D0D0;
-  background-color: #444;
+.footer {
+   position: sticky;
+   bottom: auto;
+   text-align: center;
+   padding: 1em 0 .3em 0;
+   color: #D0D0D0;
+   width:100%;
+   height: auto;   /* Height of the footer */
+   background:#444;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
