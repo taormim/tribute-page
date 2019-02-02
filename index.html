@@ -1,62 +1,30 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/mt-logo.png">
-    <title>&copy; 2019 Taormina</title>
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato:300,900" rel="stylesheet"><!-- to load google fonts -->
-    <link href="css/mini_reset.css" rel="stylesheet"><!-- for browser reset -->
-    <link href="css/normalize.css" rel="stylesheet"><!-- for cross-browser compatibility -->
-    <link href="css/style.css" rel="stylesheet"><!-- link to stylesheet -->
-  </head>
-  <body>
-    <main id="page">
-      <section class="grid-container">
-        <div class="grid-item one">
-          <figure>
-            <img src="img/header-image.jpg" alt="Dwayne &quot;The Rock&quot; Johnson">
-          </figure>
-        </div>
-        <div class="grid-item two">
-          <p>I'm grid item <strong>two</strong>.</p>
-        </div>
-        <div class="grid-item three">
-          <p>I'm grid item <strong>three</strong>.</p>
-        </div>
-        <div class="grid-item four">
-          <p>I'm grid item <strong>four</strong>.</p>
-        </div>
-        <div class="grid-item five">
-          <p>I'm grid item <strong>five</strong>.</p>
-        </div>
-        <div class="grid-item six">
-          <p>I'm grid item <strong>six</strong>.</p>
-        </div>
-        <div class="grid-item seven">
-          <p>I'm grid item <strong>seven</strong>.</p>
-        </div>
-        <div class="grid-item eight">
-          <p>I'm grid item <strong>eight</strong>.</p>
-        </div>
-        <div class="grid-item nine">
-          <p>I'm grid item <strong>nine</strong>.</p>
-        </div>
-        <div class="grid-item ten">
-          <p>I'm grid item <strong>ten</strong>.</p>
-        </div>
-        <div class="grid-item eleven">
-          <p>I'm grid item <strong>eleven</strong>.</p>
-        </div>
-        <div class="grid-item twelve">
-          <p>I'm grid item <strong>twelve</strong>.</p>
-        </div>
-      </section>
-      <footer class="footer">
-        <p>&copy; 2019 Taormina</p>
-      </footer>
-    </main>
-  </body>
-
-</html>
+<body>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "letmein") {
+/*alert('You Got it Right!');*/
+window.open('main.html', "_self");
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+</body>

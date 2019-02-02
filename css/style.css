@@ -6,6 +6,22 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;
+  color: #444 !important
+}
+h5 {font-size: 1.2em;
+}
+h6 {font-size: 1em;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin-top: .67em;
+  margin-bottom: .67em;
+  color: #777;
+}
 h1 {
   margin: 0 auto;
   padding: 0 auto;
@@ -24,6 +40,9 @@ p {
   margin-bottom: .67em;
   margin-left: auto;
   margin-right: auto;
+}
+.main-image{
+  width: 100%;
 }
 /*--Styles the grid--*/
 .grid-container {
@@ -44,7 +63,7 @@ p {
 .grid-container {
   grid-template-areas:
                       "head head head"
-                      "feat1 feat2 feat3"
+                      "wall feat2 feat3"
                       "wall blog1 blog1"
                       "wall blog2 blog2"
                       "wall blog3 blog3"
@@ -59,7 +78,7 @@ p {
   padding: 0em;
 }
 .two {
-  grid-area: feat1;
+  /*grid-area: feat1;*/
   text-align: center;
 }
 .three {
@@ -105,6 +124,17 @@ a:hover, a:active  {
 }
 a.active {
   color: #F0F0F0;
+}
+/*--Styles movie images--*/
+.movie {
+  float: left;
+  width: 50%;
+  padding: .5em .5em;
+/*  border: 2px red solid;*/
+}
+.description{
+  /*border: 2px blue solid;*/
+  padding-top: .5em;
 }
 /*--Styles Footer--*/
 .footer {
