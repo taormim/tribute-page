@@ -38,6 +38,7 @@ p {
   border: 2px solid gray;
   padding: .5em;
   background-color: papayawhip;
+  overflow: auto;
 }
 
 .grid-container {
@@ -53,15 +54,21 @@ p {
 }
 .one {
   grid-area: head;
+  border: none;
+  background: none;
+  padding: 0em;
 }
 .two {
   grid-area: feat1;
+  text-align: center;
 }
 .three {
   grid-area: feat2;
+  text-align: center;
 }
 .four {
   grid-area: feat3;
+  text-align: center;
 }
 .five {
   grid-area: wall;
