@@ -56,19 +56,19 @@ p {
 .grid-item {
   border: 2px solid gray;
   padding: .5em;
-  background-color: papayawhip;
+  background-color: #FFF;
   overflow: auto;
 }
 
 .grid-container {
   grid-template-areas:
                       "head head head"
-                      "wall feat2 feat3"
                       "wall blog1 blog1"
-                      "wall blog2 blog2"
-                      "wall blog3 blog3"
-                      "wall blog4 blog4"
-                      "close1 close1 close2"
+                      "wall2 blog2 blog2"
+                      "feat3 blog3 blog3"
+                      "feat2 blog4 blog4"
+                      "close1 close3 close3"
+                      "close1 close2 close2"
                       "foot foot foot";
 }
 .one {
@@ -83,14 +83,17 @@ p {
 }
 .three {
   grid-area: feat2;
-  text-align: center;
+  align-self: start;
 }
 .four {
   grid-area: feat3;
-  text-align: center;
+  align-self: start;
+  display: inline-block;
+  justify-content: center;
 }
 .five {
   grid-area: wall;
+  align-self: start;
 }
 .six {
   grid-area: blog1;
@@ -108,22 +111,37 @@ p {
   grid-area: close1;
 }
 .eleven {
-  grid-area: close2;
+  grid-area: wall2;
+  align-self: start;
 }
 .twelve {
   grid-area: foot;
 }
+.featured{
+  /*styles*/
+}
+.social{
+  width: auto;
+  height: 75px;
+/*  float: left;*/
+  padding: .5em .5em .5em .5em;
+}
 /*-- Styles Links in Pages--*/
 a:link, a:visited {
-  color: #D0D0D0;
+  color: #39CCCC;
   text-decoration: none;
 }
 a:hover, a:active  {
-  color: #F0F0F0;
+  color: #0074D9;
   text-decoration: underline;
 }
 a.active {
-  color: #F0F0F0;
+  color: #39CCCC;
+}
+.more{
+  float: right;
+  padding-top: .33em;
+  padding-right: .33em;
 }
 /*--Styles movie images--*/
 .movie {
@@ -135,6 +153,15 @@ a.active {
 .description{
   /*border: 2px blue solid;*/
   padding-top: .5em;
+}
+.blog-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.blog-post{
+  padding: 0em 3em 1em 3em;
 }
 /*--Styles Footer--*/
 .footer {
