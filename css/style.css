@@ -188,26 +188,45 @@ a.active {
   grid-template-areas:
                       "foot1 foot2 foot3";
   border: 3px blue solid;
-  padding: 1em;
+  padding: 1vw;
   display: grid;
-  grid-gap: 1em 2em;
+  grid-gap: 1vw 2vw;
   grid-template-columns: repeat(3, 1fr);
 }
 .foot1 {
   grid-area: foot1;
+  border: 3px green dashed;
 }
 .foot2 {
   grid-area: foot2;
-  position: absolute;
+/*  position: absolute;*/
   bottom: 0;
-  margin-left: 50%;
+  margin-left: 40%;
+  border: 3px yellow dashed;
+  font-size: 1.5vw;
 }
 .foot3 {
   grid-area: foot3;
+  border: 3px green dashed;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
   body {background-color: red; font-size: 2vw;}
+
+  .grid-container-foot{display: flex; /*-- sets the display mode--*/
+    flex-direction: column; /*-- sets direction row or column --*/
+    justify-content: around; /*-- aligns content on main axis --*/
+    flex-wrap: no-wrap; /*-- determines whether content wraps or not --*/}
+  .foot1 {order: 1;}
+  .foot2{order:3; font-size: 3vw;}
+  .foot3{order: 2;}
+  /*.grid-container-foot{grid-template-areas:
+                        "foot1"
+                        "foot3"
+                        "foot2";
+                      grid-template-rows: repeat(3, 1fr);}
+  .foot2 {position: absolute;
+    top: 0;}*/
 }
