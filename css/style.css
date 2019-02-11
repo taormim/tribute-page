@@ -6,35 +6,36 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-h1 {font-size: 2em;}
-h2 {font-size: 1.8em;}
-h3 {font-size: 1.6em;}
-h4 {font-size: 1.4em;
-  color: #444 !important
+h1 {font-size: 2vw; color: #444 !important;}
+h2 {font-size: 1.8vw;}
+h3 {font-size: 1.6vw;}
+h4 {font-size: 1.4vw;
+  color: #444 !important;
 }
-h5 {font-size: 1.2em;
+h5 {font-size: 1.2vw;
 }
-h6 {font-size: 1em;}
+h6 {font-size: 1vw;}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   margin-top: .67em;
   margin-bottom: .67em;
   color: #777;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 1.5em;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: center;
+  text-align: left;
 }
 body {
   color: #333;
-  font-size: 16px;
+  font-size: 1vw;
   font-family: 'Gentium Book Basic', serif;
-  background-color: lightgray;
+  background-color: #ddfdfb;
 }
 p {
   margin-bottom: .67em;
@@ -101,7 +102,7 @@ p {
 .seven {
   grid-area: blog2;
 }
-.eight {
+/*.eight {
   grid-area: blog3;
 }
 .nine {
@@ -109,14 +110,14 @@ p {
 }
 .ten {
   grid-area: close1;
-}
+}*/
 .eleven {
   grid-area: wall2;
   align-self: start;
 }
-.twelve {
+/*.twelve {
   grid-area: foot;
-}
+}*/
 .featured{
   /*styles*/
 }
@@ -142,6 +143,14 @@ a.active {
   float: right;
   padding-top: .33em;
   padding-right: .33em;
+}
+.btn{
+  border-radius: 40px;
+  font-size:80%;
+  line-height: 1vw;
+}
+.fa-external-link-alt{
+  font-size: .75em;
 }
 /*--Styles movie images--*/
 .movie {
@@ -173,9 +182,32 @@ a.active {
    width:100%;
    height: auto;   /* Height of the footer */
    background:#444;
+   border: 3px red solid;
+}
+.grid-container-foot {
+  grid-template-areas:
+                      "foot1 foot2 foot3";
+  border: 3px blue solid;
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.foot1 {
+  grid-area: foot1;
+}
+.foot2 {
+  grid-area: foot2;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+}
+.foot3 {
+  grid-area: foot3;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
+  body {background-color: red; font-size: 2vw;}
 }
