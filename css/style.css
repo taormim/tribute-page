@@ -123,9 +123,9 @@ p {
 }
 .social{
   width: auto;
-  height: 75px;
+  height: 6vw;
 /*  float: left;*/
-  padding: .5em .5em .5em .5em;
+  padding: .5vw;
 }
 /*-- Styles Links in Pages--*/
 a:link, a:visited {
