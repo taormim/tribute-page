@@ -146,8 +146,8 @@ a.active {
 }
 .btn{
   border-radius: 40px;
-  font-size:80%;
-  line-height: 1vw;
+  font-size:100%;
+  line-height: 1.5vw;
 }
 .fa-external-link-alt{
   font-size: .75em;
@@ -212,6 +212,8 @@ a.active {
   header {width: 96%;}
   article {width: 96%;}
   body {/*background-color: red*/; font-size: 2vw;}
+  .btn {font-size:120%;}
+  .btn-fix{font-size: 200%;}
 
   .grid-container-foot{display: flex; /*-- sets the display mode--*/
     flex-direction: column; /*-- sets direction row or column --*/
