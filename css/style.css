@@ -182,12 +182,10 @@ a.active {
    width:100%;
    height: auto;   /* Height of the footer */
    background:#444;
-   border: 3px red solid;
 }
 .grid-container-foot {
   grid-template-areas:
                       "foot1 foot2 foot3";
-  border: 3px blue solid;
   padding: 1vw;
   display: grid;
   grid-gap: 1vw 2vw;
@@ -213,7 +211,7 @@ a.active {
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
-  body {background-color: red; font-size: 2vw;}
+  body {/*background-color: red*/; font-size: 2vw;}
 
   .grid-container-foot{display: flex; /*-- sets the display mode--*/
     flex-direction: column; /*-- sets direction row or column --*/
