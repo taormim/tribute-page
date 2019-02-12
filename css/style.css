@@ -193,19 +193,13 @@ a.active {
 }
 .foot1 {
   grid-area: foot1;
-  border: 3px green dashed;
 }
 .foot2 {
   grid-area: foot2;
-/*  position: absolute;*/
-/*  bottom: 0;
-  margin-left: 40%;*/
-  border: 3px yellow dashed;
   font-size: 1.5vw;
 }
 .foot3 {
   grid-area: foot3;
-  border: 3px green dashed;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
