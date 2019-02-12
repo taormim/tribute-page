@@ -181,7 +181,7 @@ a.active {
    color: #D0D0D0;
    width:100%;
    height: auto;   /* Height of the footer */
-   background:#444;
+   background:#043a32;
 }
 .grid-container-foot {
   grid-template-areas:
@@ -198,8 +198,8 @@ a.active {
 .foot2 {
   grid-area: foot2;
 /*  position: absolute;*/
-  bottom: 0;
-  margin-left: 40%;
+/*  bottom: 0;
+  margin-left: 40%;*/
   border: 3px yellow dashed;
   font-size: 1.5vw;
 }
