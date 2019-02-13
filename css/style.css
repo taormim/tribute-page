@@ -118,9 +118,6 @@ p {
 /*.twelve {
   grid-area: foot;
 }*/
-.featured{
-  /*styles*/
-}
 .social{
   width: auto;
   height: 6vw;
@@ -161,7 +158,7 @@ a.active {
 }
 .description{
   /*border: 2px blue solid;*/
-  padding-top: .5em;
+  padding-bottom: 1vw;
 }
 .blog-img{
   display: block;
@@ -205,9 +202,12 @@ a.active {
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
-  body {/*background-color: red*/; font-size: 2vw;}
+  body {/*background-color: red*/; font-size: 3vw;}
+  h4 {font-size: 4vw;}
+  h1 {font-size: 5vw;}
   .btn {font-size:120%;}
-  .btn-fix{font-size: 220%;}
+  .btn-fix{font-size: 250%;}
+  .description{font-size: 3vw;}
 
   .grid-container-foot{display: flex; /*-- sets the display mode--*/
     flex-direction: column; /*-- sets direction row or column --*/
@@ -216,6 +216,20 @@ a.active {
   .foot1 {order: 1;}
   .foot2{order:3; font-size: 3vw;}
   .foot3{order: 2;}
+
+/*--Reshapes the page for mobile devices--*/
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "head"
+                        "wall"
+                        "blog1"
+                        "blog2"
+                        "wall2"
+                        "foot";
+  }
+
+
   /*.grid-container-foot{grid-template-areas:
                         "foot1"
                         "foot3"
@@ -223,4 +237,10 @@ a.active {
                       grid-template-rows: repeat(3, 1fr);}
   .foot2 {position: absolute;
     top: 0;}*/
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  body {/*background-color: red*/; font-size: 1.5vw;}
+  h4 {font-size: 2vw;}
+  h1 {font-size: 3vw;}
 }
